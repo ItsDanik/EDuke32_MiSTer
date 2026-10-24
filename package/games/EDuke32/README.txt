@@ -1,8 +1,9 @@
 EDuke32 for MiSTer
 ==================
 
-Duke Nukem 3D and its add-ons Duke It Out in D.C., Life's a Beach and
-Nuclear Winter on MiSTer FPGA as a hybrid port.
+Duke Nukem 3D and its add-ons Duke It Out in D.C., Life's a Beach,
+Nuclear Winter, Duke!ZONE II and Penthouse Paradise on MiSTer FPGA as a
+hybrid port.
 
 Everything about it (options, controls, help):
   https://github.com/ItsDanik/EDuke32_MiSTer
@@ -18,6 +19,10 @@ Game files
                                 addons/vacation
     Nuclear Winter              NWINTER.GRP, next to DUKE3D.GRP or in
                                 addons/nw
+    Duke!ZONE II                DUKEZONE2.GRP (Raze's release) or the GRP
+                                of its CD, next to DUKE3D.GRP
+    Penthouse Paradise          PENTHOUS.ZIP, not unpacked, or the GRP of
+                                ZOOM Platform's release, next to DUKE3D.GRP
   They can go on a USB drive instead, in /media/usb0/games/dnk/EDuke32/.
 
 Playing

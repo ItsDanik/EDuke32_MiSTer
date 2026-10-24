@@ -2,7 +2,7 @@
 
 # EDuke32 for MiSTer
 
-Duke Nukem 3D and its add-ons Duke It Out in D.C., Life's a Beach and Nuclear Winter on [MiSTer FPGA](https://github.com/MiSTer-devel/Main_MiSTer/wiki) as a hybrid port.
+Duke Nukem 3D and its add-ons Duke It Out in D.C., Life's a Beach, Nuclear Winter, Duke!ZONE II and Penthouse Paradise on [MiSTer FPGA](https://github.com/MiSTer-devel/Main_MiSTer/wiki) as a hybrid port.
 
 The game is [EDuke32](https://www.eduke32.com), the source port of 3D Realms' Duke Nukem 3D (1996) by Richard "TerminX" Gobeille, Evan "Hendricks266" Ramos and its contributors, on Ken Silverman's Build engine, with the engine's classic software renderer. It runs on the MiSTer's ARM CPU. The EDuke32 FPGA core provides native 15kHz video (CRT, VGA and HDMI) at 320x200, 640x200, 320x240 or 640x240, 44.1kHz audio, a MIDI synthesizer and an FM chip for the game's music, and keyboard, mouse and gamepad input with rumble. The two halves talk through shared DDR3 memory.
 
@@ -18,7 +18,7 @@ The game is [EDuke32](https://www.eduke32.com), the source port of 3D Realms' Du
 ## Requirements
 
 - **danik_hybrid_ports**, the launcher (`Scripts/danik_hybrid_ports.sh`): run it **once** from the MiSTer's `Scripts` menu. It starts the game whenever its menu entry is loaded, keeps running after a reboot, and serves all our hybrid ports; its screen picks which ports and games to have, and can keep them up to date through `update_all`. Without it the core says "Game not running".
-- **Game data**, which is not included: `DUKE3D.GRP` of Duke Nukem 3D, version 1.3D or the Atomic Edition (1.4 or 1.5: from the original CD, *Megaton Edition* or the GOG release), or of the shareware version. The add-ons are optional and need the full game's `DUKE3D.GRP` as well: *Duke It Out in D.C.* (`DUKEDC.GRP`) and *Life's a Beach* (`VACATION.GRP`) of the same version as it (1.3D or Atomic), *Nuclear Winter* (`NWINTER.GRP`) with the Atomic Edition.
+- **Game data**, which is not included: `DUKE3D.GRP` of Duke Nukem 3D, version 1.3D or the Atomic Edition (1.4 or 1.5: from the original CD, *Megaton Edition* or the GOG release), or of the shareware version. The add-ons are optional and need the full game's `DUKE3D.GRP` as well: *Duke It Out in D.C.* (`DUKEDC.GRP`) and *Life's a Beach* (`VACATION.GRP`) of the same version as it (1.3D or Atomic), *Nuclear Winter* (`NWINTER.GRP`) with the Atomic Edition, *Duke!ZONE II* (`DUKEZONE2.GRP` of Raze's release, or the GRP of its CD) of the same version as it, *Penthouse Paradise* (`PENTHOUS.ZIP`, or the GRP of ZOOM Platform's release) with the Atomic Edition.
 - **Recommended:** a gamepad with two analog sticks and analog triggers, like an Xbox or PlayStation controller. A gamepad without them works but is not recommended. The game can also be played with a keyboard and mouse.
 
 ## Installation
@@ -36,12 +36,14 @@ With `update_all` (Downloader 2.4 or newer, which update_all keeps up to date):
    | Duke It Out in D.C. | `DUKEDC.GRP`, next to `DUKE3D.GRP` or in `addons/dc` |
    | Life's a Beach | `VACATION.GRP`, next to `DUKE3D.GRP` or in `addons/vacation` |
    | Nuclear Winter | `NWINTER.GRP`, next to `DUKE3D.GRP` or in `addons/nw` |
+   | Duke!ZONE II | `DUKEZONE2.GRP` (Raze's release, with its `DUKEZONE2.GRPINFO`) or the GRP of its CD, next to `DUKE3D.GRP` |
+   | Penthouse Paradise | `PENTHOUS.ZIP` as it is, not unpacked, or the GRP of ZOOM Platform's release, next to `DUKE3D.GRP` |
 5. Load the game from the `Other` menu, e.g. **dnk-Duke Nukem 3D**.
 
 > [!NOTE]
 > The game data can go on a USB drive instead, into the same folder there (`/media/usb0/games/dnk/EDuke32/`): the game looks for it there first, and then keeps its settings and saved games there as well. Everything else stays on the SD card.
 
-The game files are known by their contents, whatever their names. The menu entry of Duke Nukem 3D starts the shareware when the full game is not there. When a game's files are missing, the core says which files to copy where. Each game keeps its own OSD settings and button mappings. The core file itself (`_Other/dnk/dnk-EDuke32_*.rbf`, or from *Recent*) lists the games that are there to pick from, other add-ons the game knows among them (Duke!ZONE II, Penthouse Paradise); quitting a game then returns to the list. The game's log is in `/media/fat/logs/dnk/EDuke32/eduke32.log`. Settings (`eduke32.cfg`, `settings.cfg`) are in `/media/fat/games/dnk/EDuke32/`, as are the saved games of Duke Nukem 3D (`save0000.esv` and on); each add-on keeps its saved games in a folder of its own there, `DC`, `VACA` and `NW` (all of it on the USB drive, if the game data is there).
+The game files are known by their contents, whatever their names. The menu entry of Duke Nukem 3D starts the shareware when the full game is not there. When a game's files are missing, the core says which files to copy where. Each game keeps its own OSD settings and button mappings. The core file itself (`_Other/dnk/dnk-EDuke32_*.rbf`, or from *Recent*) lists the games that are there to pick from; quitting a game then returns to the list. The game's log is in `/media/fat/logs/dnk/EDuke32/eduke32.log`. Settings (`eduke32.cfg`, `settings.cfg`) are in `/media/fat/games/dnk/EDuke32/`, as are the saved games of Duke Nukem 3D (`save0000.esv` and on); each add-on keeps its saved games in a folder of its own there, `DC`, `VACA`, `NW`, `DZ2` and `PP` (all of it on the USB drive, if the game data is there).
 
 ## OSD options
 
