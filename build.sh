@@ -22,6 +22,10 @@ case $TYPE in
     RelWithDebInfo) MAKEOPTS="$MAKEOPTS RELEASE=1 FORCEDEBUG=1 STRIP=" ;;
     *) MAKEOPTS="$MAKEOPTS RELEASE=0 STRIP=" ;;
 esac
+# MISTER_PROFILE=1 ./build.sh: the profiling build (the release's code with
+# its symbols; eduke32/source/build/include/mister.h), for development only.
+# Remove build/$TARGET/obj when switching: objects of other flags do not link.
+[ -n "$MISTER_PROFILE" ] && MAKEOPTS="$MAKEOPTS MISTER_PROFILE=$MISTER_PROFILE STRIP="
 if [ "$TARGET" = mister ]; then
     # the compiler's runtime is linked in, the binary only needs the MiSTer's glibc
     MAKEOPTS="$MAKEOPTS CROSS=arm-linux-gnueabihf- ARCH=armv7l"
