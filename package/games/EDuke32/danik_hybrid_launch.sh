@@ -21,7 +21,8 @@ LOG="$LOGDIR/eduke32.log"
 DATADIR=$(for d in /media/usb[0-7]/games/dnk/"$CORE" "$GAMEDIR"; do [ -d "$d" ] && { echo "$d"; break; }; done)
 
 cd "$DATADIR" || exit 1
-mkdir -p "$LOGDIR" config saves
+# EDuke32 keeps its settings and saved games in the folder itself (-usecwd)
+mkdir -p "$LOGDIR"
 
 # Only once
 exec 9> /tmp/eduke32.lock
