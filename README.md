@@ -38,7 +38,7 @@ With `update_all` (Downloader 2.4 or newer, which update_all keeps up to date):
    | Nuclear Winter | `NWINTER.GRP`, next to `DUKE3D.GRP` or in `addons/nw` |
    | Duke!ZONE II | `DUKEZONE2.GRP` (Raze's release, with its `DUKEZONE2.GRPINFO`) or the GRP of its CD, next to `DUKE3D.GRP` |
    | Penthouse Paradise | `PENTHOUS.ZIP` as it is, not unpacked, or the GRP of ZOOM Platform's release, next to `DUKE3D.GRP` |
-5. Load the game from the `Other` menu, e.g. **dnk-Duke Nukem 3D**.
+5. Load the game from the `Other` menu, e.g. **dnk-Duke Nukem 3D**, or from the `Hybrid Ports` folder if you moved the games there in the launcher.
 
 > [!NOTE]
 > The game data can go on a USB drive instead, into the same folder there (`/media/usb0/games/dnk/EDuke32/`): the game looks for it there first, and then keeps its settings and saved games there as well. Everything else stays on the SD card.
