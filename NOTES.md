@@ -34,7 +34,7 @@ The toolchain image (Debian bullseye, glibc 2.31 to match the MiSTer) is built f
 |---|---|
 | `hybrid/` | submodule: [ItsDanik/Hybrid_MiSTer](https://github.com/ItsDanik/Hybrid_MiSTer), what all our hybrid ports share: the FPGA host module, the ARM side library, SDL2 drivers, the launcher (`danik_hybrid_ports.sh`), toolchain and conventions. See its README. |
 | `core/` | FPGA core, based on [Template_MiSTer](https://github.com/MiSTer-devel/Template_MiSTer): `EDuke32.sv` (OSD and button names) around `hybrid/rtl/hybrid_host.sv` |
-| `eduke32/` | submodule: [EDuke32](https://voidpoint.io/terminx/eduke32) branch `mister`, with the MiSTer changes behind `MISTER_HYBRID` (`Common.mak`, `GNUmakefile`): the game's part in `source/duke3d/src/mister_port.cpp`, the engine's (video, clock, joystick) in `source/build/src/sdlayer.cpp` and `timer.cpp`, and the MIDI driver for the core's FM chip in `source/audiolib/src/driver_misterfm.cpp` |
+| `eduke32/` | submodule: [ItsDanik/eduke32](https://github.com/ItsDanik/eduke32) branch `mister`, [EDuke32](https://voidpoint.io/terminx/eduke32) with the MiSTer changes behind `MISTER_HYBRID` (`Common.mak`, `GNUmakefile`): the game's part in `source/duke3d/src/mister_port.cpp`, the engine's (video, clock, joystick) in `source/build/src/sdlayer.cpp` and `timer.cpp`, and the MIDI driver for the core's FM chip in `source/audiolib/src/driver_misterfm.cpp` |
 | `package/` | files shipped in the release next to the binary (`danik_hybrid_launch.sh`, README), `games.txt`: the games and their menu entries, and `logos/`: each game's logo, shown while it starts |
 | `releases/` | release packages |
 
