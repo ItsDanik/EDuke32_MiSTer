@@ -18,7 +18,7 @@ The game is [EDuke32](https://www.eduke32.com), the source port of 3D Realms' Du
 ## Requirements
 
 - **danik_hybrid_ports**, the launcher: run it **once** from the MiSTer's `Scripts` menu ([The launcher](#the-launcher)). Without it the core says "Game not running".
-- **Game data**, which is not included: `DUKE3D.GRP` of Duke Nukem 3D, version 1.3D or the Atomic Edition (1.4 or 1.5: from the original CD, *Megaton Edition* or the GOG release), or of the shareware version. The add-ons are optional and need the full game's `DUKE3D.GRP` as well: *Duke It Out in D.C.* (`DUKEDC.GRP`) and *Life's a Beach* (`VACATION.GRP`) of the same version as it (1.3D or Atomic), *Nuclear Winter* (`NWINTER.GRP`) with the Atomic Edition, *Duke!ZONE II* (`DUKEZONE2.GRP` of Raze's release, or the GRP of its CD) of the same version as it, *Penthouse Paradise* (`PENTHOUS.ZIP`, or the GRP of ZOOM Platform's release) with the Atomic Edition.
+- **Game data**, which is not included: `DUKE3D.GRP` of Duke Nukem 3D, version 1.3D or the Atomic Edition (1.4 or 1.5: from the original CD, *Megaton Edition* or the GOG release), or of the shareware version. The add-ons are optional and need the full game's `DUKE3D.GRP` as well: *Duke It Out in D.C.* (`DUKEDC.GRP`) and *Life's a Beach* (`VACATION.GRP`) of the same version as it (1.3D or Atomic), *Nuclear Winter* (`NWINTER.GRP`) with the Atomic Edition, *Duke!ZONE II* (`DUKEZONE2.GRP` of NightFright's release, or the GRP of its CD) of the same version as it, *Penthouse Paradise* (`PENTHOUS.ZIP`, or the GRP of ZOOM Platform's release) with the Atomic Edition.
 - **Recommended:** a gamepad with two analog sticks and analog triggers, like an Xbox or PlayStation controller. A gamepad without them works but is not recommended. The game can also be played with a keyboard and mouse.
 
 ## Installation
@@ -36,7 +36,7 @@ With `update_all` (Downloader 2.4 or newer, which update_all keeps up to date):
    | Duke It Out in D.C. | `DUKEDC.GRP`, next to `DUKE3D.GRP` or in `addons/dc` |
    | Life's a Beach | `VACATION.GRP`, next to `DUKE3D.GRP` or in `addons/vacation` |
    | Nuclear Winter | `NWINTER.GRP`, next to `DUKE3D.GRP` or in `addons/nw` |
-   | Duke!ZONE II | `DUKEZONE2.GRP` (Raze's release, with its `DUKEZONE2.GRPINFO`) or the GRP of its CD, next to `DUKE3D.GRP` |
+   | Duke!ZONE II | NightFright's release (`dukezone2.zip`, the Playability Edit, or an earlier one): its `dukezone2` folder as it is, or `DUKEZONE2.GRP` next to `DUKE3D.GRP`; or the GRP of its CD, next to `DUKE3D.GRP` |
    | Penthouse Paradise | `PENTHOUS.ZIP` as it is, not unpacked, or the GRP of ZOOM Platform's release, next to `DUKE3D.GRP` |
 5. Load the game from the `Other` menu, e.g. **dnk-Duke Nukem 3D**, or from the `Hybrid Ports` folder if you moved the games there in the launcher.
 
