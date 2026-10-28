@@ -70,7 +70,7 @@ Run it from the `Scripts` menu again whenever you want to change something. Its 
 |---|---|
 | Aspect ratio, Scale, Scandoubler Fx, Stereo Mix | as in other cores |
 | FPS Counter | shows the pictures per second in the top left corner |
-| HDMI Only | as in the other hybrid ports, for resolutions of 640x400 and more: EDuke32 has none, so nothing changes here |
+| HDMI Only | **Yes** if no CRT is connected: resolutions of 640x400 and more are then progressive instead of interlaced, and so is the core's own screen before the game, which moves at 60 pictures a second for a CRT and shows fine lines on HDMI without it. The analog output is switched off while one is shown, so that a 15kHz screen can never get such a signal. EDuke32 has no such resolution, so nothing changes in the game. Not needed with `forced_scandoubler=1` (VGA monitor); not there with `direct_video=1` |
 | CRT Options | **Horizontal Size**: the picture's width<br>**Horizontal Pos**: moves it left or right<br>**Vertical Pos**: moves it up or down<br>**HUD (Top)**: moves the messages, the level's name and the frag bar 0 to 24 lines off the top edge (default 0), at 240 lines<br>**HUD (Bottom)**: lifts the status bar (or the mini HUD) and the weapon 0 to 24 lines off the bottom edge (default 0), at 240 lines<br><br>For a 15kHz screen: fits the picture to it and keeps the HUD out of the overscan. HDMI is not affected; not there with `forced_scandoubler=1` |
 | Resolution | **320x200**: as the original (default)<br>**640x200**: twice the detail across, same picture size<br>**320x240**: the view fills the whole screen<br>**640x240**: both<br><br>Always at 15kHz. With 240 lines the HUD is drawn over the view at the *HUD* margins; menus and pictures stay at 200 lines, centred. Applies at once; the game's own video mode menu is not there |
 | L. Stick Sensitivity, R. Stick Sensitivity | how fast the left stick (walk, strafe) and the right stick (turn, look) move the player, 25% to 300%. They apply at once, on top of the sensitivity in the game's own menu |
@@ -79,6 +79,7 @@ Run it from the `Scripts` menu again whenever you want to change something. Its 
 | Music | **MIDI**: the core's synthesizer, or an MT32-pi when one is connected and on (default)<br>**FM chip**: as an AdLib or Sound Blaster card played it<br><br>*SoundFont*: **Default** is GeneralUser GS, which comes with the port; 1 to 7 are your own `.sf2` files in `games/dnk/SoundFonts/`. A SoundFont that is missing, damaged or too big is said in the MiSTer's info box, and the music goes to the FM chip. Applies at once |
 | MT32-pi | only there while an MT32-pi answers on the user port: see [NOTES.md](NOTES.md#music) |
 | Cheats | **God Mode**: nothing hurts you<br>**No Clipping**: walk through walls<br>**Show Full Map**: the whole level on the map<br>**No Monsters**: the monsters are gone<br>**Give Everything**: every weapon with full ammo, armor, items and keys<br>**Give Weapons**: every weapon with full ammo<br>**Give Keys**: all keys<br>**Next Level**: completes the level<br><br>As the game's own cheats, none of them at *Damn I'm Good*, nor in a demo or a user map |
+| Reset | starts the game again from its beginning, as the USER button does |
 | Save Diagnostic Report | the last line: see [If something is wrong](#if-something-is-wrong) |
 
 ## Controls
