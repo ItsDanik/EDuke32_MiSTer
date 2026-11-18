@@ -11,3 +11,10 @@ VACA|DN3D: Life's a Beach
 NW|DN3D: Nuclear Winter
 DZ2|DN3D: Duke!ZONE II
 PP|DN3D: Penthouse Paradise
+FURY|Ion Fury
+NAM|NAM
+WW2GI|WWII GI
+PLATOONL|WWII GI: Platoon Leader
+ZOMBIECRISIS|Zombie Crisis
+DUKEPLUS|DN3D: DukePlus
+AWOL|A.W.O.L.
