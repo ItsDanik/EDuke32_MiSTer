@@ -18,3 +18,9 @@ PLATOONL|WWII GI: Platoon Leader
 ZOMBIECRISIS|Zombie Crisis
 DUKEPLUS|DN3D: DukePlus
 AWOL|A.W.O.L.
+EHIGHWAYS|Electric Highways
+BORGNUKEM|Borg Nukem
+PAINTBRAWL|Extreme Paintbrawl
+PLUNDER|Plunder and Pillage
+AGEOFEVIL|Age of Evil
+LIQUIDATOR|Liquidator
